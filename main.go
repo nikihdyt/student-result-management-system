@@ -22,6 +22,8 @@ func main() {
 		Methods("PUT")
 	r.HandleFunc("/v1/nilai/{nim}/{kode_mk}", controllers.Delete).
 		Methods("DELETE")
+	r.HandleFunc("/v1/msw", controllers.ReadMahasiswa).
+		Methods("GET")
 
 	log.Fatal(http.ListenAndServe(":8080", r))
 }
