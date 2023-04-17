@@ -188,7 +188,7 @@ func Delete(w http.ResponseWriter, r *http.Request) {
 
 	responseData := make(map[string]interface{})
 	responseData["meta"] = meta
-	responseData["message"] = "Success Update Nilai Mahasiswa"
+	responseData["message"] = "Success Detele Nilai Mahasiswa"
 
 	ResponseJson(w, http.StatusOK, responseData)
 
